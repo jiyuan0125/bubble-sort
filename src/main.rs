@@ -1,3 +1,10 @@
+/// Sort a given mutable slice using bubble sort algorithem.
+/// # Examples
+/// ```
+/// let mut arr = [5, 4, 3, 2, 1];
+/// bubble_sort(&mut arr);
+/// assert_eq!(arr, [1, 2, 3, 4, 5]);
+/// ```
 fn bubble_sort<T: PartialOrd>(arr: &mut [T]) {
     for i in 0..arr.len() - 1 {
         for j in 0..arr.len() - 1 - i {
